@@ -4,7 +4,7 @@ const Home = () => {
       <div className="container">
         <img
         id="home-img"
-        src="../src/assets/img/logo.png"
+        src="https://i.ibb.co/k3tDw9y/logo.png"
         width={200}
         height={200}
         />
@@ -21,7 +21,7 @@ const Home = () => {
         </section>
       </div>
       <video autoPlay muted loop>
-        <source src={"../src/assets/fondo.mp4"} type="video/mp4" />
+        <source src={"https://i.ibb.co/t4DjJvQ/fondo.gif"} type="video/mp4" />
         {/* Agrega más elementos <source> si deseas agregar formatos adicionales del video */}
       </video>
     </div>

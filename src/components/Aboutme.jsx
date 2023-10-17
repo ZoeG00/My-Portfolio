@@ -6,7 +6,7 @@ export default function Aboutme() {
         
       <img
         id="foto-perfil"
-        src="../../src/assets/img/perfil.png"
+        src="https://i.ibb.co/Sxjb4bm/perfil.png"
         alt="nature image"
       />
       <Typography>Sobre mí</Typography>

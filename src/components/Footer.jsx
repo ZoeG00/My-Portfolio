@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full bg-white p-8">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
         <img
-          src="../src/assets/img/logo2.png"
+          src="https://i.ibb.co/MNPx72S/logo2.png"
           alt="logo"
           width={150}
           height={50}
