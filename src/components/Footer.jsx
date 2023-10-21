@@ -4,8 +4,8 @@ import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+    <footer className="w-full p-8">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
         <img
           src="https://i.ibb.co/MNPx72S/logo2.png"
           alt="logo"
@@ -57,12 +57,7 @@ export default function Footer() {
         </ul>
       </div>
       <hr className="my-8 border-blue-gray-50 " />
-      <Typography color="blue-gray">
-        &copy; 2023 Soluciones Digitales
-      </Typography>
-      <Typography color="blue-gray">
-        Desarrollo: Zoe Guzman
-      </Typography>
+      <p className="text-black">&copy; 2023 Soluciones Digitales</p>
     </footer>
   );
 }

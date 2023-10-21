@@ -15,6 +15,7 @@ export default function Menu() {
          alt="Chat on WhatsApp"
          id="wtsp-button"
           src="https://i.ibb.co/wCZxZ1M/Whats-App-Button-Green-Small.png"
+          width="20%"
           />
         </a>
       </div>

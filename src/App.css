@@ -1,20 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-image: image(
-    "C:\Users\usuario\Documents\Proyectos\My-Portfolio\react\src\assets\fondo.mp4"
-  );
+}
+* {
+  font-family: "Poppins", sans-serif;
 }
 /*****************
 Sección Home
 *****************/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #51ecb8 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
 #video-container {
   overflow-x: hidden;
 }
 
 #video-container video {
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -27,9 +77,9 @@ Sección Home
   border-radius: 50%;
 }
 /*Animacion*/
-.container { 
-  color: #e5e5e5; 
-  font-size:xx-large;
+.container {
+  color: #e5e5e5;
+  font-size: xx-large;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
@@ -45,16 +95,16 @@ Sección Home
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
+  height: 50px;
+  overflow: hidden;
   margin-left: 1rem;
 }
 
 .animation > div > div {
   padding: 0.25rem 0.75rem;
-  height:2.81rem;
+  height: 2.81rem;
   margin-bottom: 2.81rem;
-  display:inline-block;
+  display: inline-block;
 }
 
 .animation div:first-child {
@@ -62,16 +112,36 @@ Sección Home
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 /***************
@@ -90,20 +160,20 @@ Sección Menú
 @keyframes come-in {
   0% {
     -webkit-transform: translatey(100px);
-            transform: translatey(100px);
+    transform: translatey(100px);
     opacity: 0;
   }
   30% {
     -webkit-transform: translateX(-50px) scale(0.4);
-            transform: translateX(-50px) scale(0.4);
+    transform: translateX(-50px) scale(0.4);
   }
   70% {
     -webkit-transform: translateX(0px) scale(1.2);
-            transform: translateX(0px) scale(1.2);
+    transform: translateX(0px) scale(1.2);
   }
   100% {
     -webkit-transform: translatey(0px) scale(1);
-            transform: translatey(0px) scale(1);
+    transform: translatey(0px) scale(1);
     opacity: 1;
   }
 }
@@ -122,21 +192,21 @@ Sección Menú
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
   -webkit-transform: translatey(5px);
-          transform: translatey(5px);
+  transform: translatey(5px);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .floating-container:hover .element-container .float-element:nth-child(1) {
   -webkit-animation: come-in 0.4s forwards 0.2s;
-          animation: come-in 0.4s forwards 0.2s;
+  animation: come-in 0.4s forwards 0.2s;
 }
 .floating-container:hover .element-container .float-element:nth-child(2) {
   -webkit-animation: come-in 0.4s forwards 0.4s;
-          animation: come-in 0.4s forwards 0.4s;
+  animation: come-in 0.4s forwards 0.4s;
 }
 .floating-container:hover .element-container .float-element:nth-child(3) {
   -webkit-animation: come-in 0.4s forwards 0.6s;
-          animation: come-in 0.4s forwards 0.6s;
+  animation: come-in 0.4s forwards 0.6s;
 }
 .floating-container .floating-button {
   position: absolute;
@@ -172,7 +242,7 @@ Sección Menú
   z-index: 0;
   opacity: 0;
   -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
 .floating-container .float-element .material-icons {
   vertical-align: middle;
@@ -196,10 +266,10 @@ Seccion Sobre mí
 ***************************/
 
 #sobre-mi {
-  margin-top:650px;
+  margin-top: 650px;
 }
 #foto-perfil {
- height: 30vh;
+  height: 30vh;
   width: 15vw;
   border-radius: 50%;
 }
@@ -215,7 +285,7 @@ footer {
 #networks {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
 }
 #networks li {
   margin-left: 0.5rem;
@@ -223,5 +293,3 @@ footer {
 #creditos {
   justify-self: center;
 }
-
-
