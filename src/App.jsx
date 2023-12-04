@@ -10,8 +10,6 @@ function App() {
     <>
       <Home/>
       <Menu/>
-      <Aboutme/>
-      <Footer/>
     </>
   )
 }

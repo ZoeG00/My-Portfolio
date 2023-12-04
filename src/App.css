@@ -14,7 +14,7 @@ Sección Home
 *****************/
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #51ecb8 50%, #09f 50%);
+  background-image: linear-gradient(-60deg, #51ecb8 50%, rgb(0, 195, 255) 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -59,27 +59,16 @@ h1 {
   }
 }
 
-#video-container {
-  overflow-x: hidden;
-}
-
-#video-container video {
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 #home-img {
   border-radius: 50%;
+  box-shadow: black 3px 10px;
+  opacity: 90%;
 }
 /*Animacion*/
 .container {
   color: #e5e5e5;
-  font-size: xx-large;
+  text-shadow: black 3px 5px;
+  font-size: 2vw;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
@@ -95,7 +84,7 @@ h1 {
 }
 
 .animation {
-  height: 50px;
+  height:70px;
   overflow: hidden;
   margin-left: 1rem;
 }
@@ -184,10 +173,10 @@ Sección Menú
   height: 100px;
   bottom: 0;
   right: 0;
-  margin: 35px 25px;
+  margin: 70px 20px;
 }
 .floating-container:hover {
-  height: 300px;
+  height: 500px;
 }
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
@@ -210,18 +199,17 @@ Sección Menú
 }
 .floating-container .floating-button {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 4vw;
+  height: 7vh;
   background: #2cb3f0;
   bottom: 0;
   border-radius: 50%;
   left: 0;
   right: 0;
-  margin: auto;
   color: white;
-  line-height: 65px;
+  line-height: 95px;
   text-align: center;
-  font-size: 23px;
+  font-size: 50px;
   z-index: 100;
   box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
   cursor: pointer;
@@ -232,21 +220,22 @@ Sección Menú
   position: relative;
   display: block;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 15px auto;
+  width: 70px;
+  height: 70px;
+  margin: 50px auto;
   color: white;
-  font-weight: 500;
   text-align: center;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 70px;
   z-index: 0;
   opacity: 0;
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
 }
-.floating-container .float-element .material-icons {
-  vertical-align: middle;
-  font-size: 16px;
+.nav-titles {
+  text-shadow: black 1px 2px;
+  font-size: 15px;
+  margin: -10px;
 }
 .floating-container .float-element:nth-child(1) {
   background: #52e09e;
