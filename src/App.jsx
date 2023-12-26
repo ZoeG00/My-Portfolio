@@ -1,17 +1,18 @@
-import Home from './components/Home'
-import Menu from './components/Menu';
-import Aboutme from './components/Aboutme';
-import Footer from './components/Footer';
+import Rutas from "./components/routes/rutas";
+import Menu from "./components/Menu";
 
-import './App.css';
+import "./App.css";
 
+import { HashRouter } from "react-router-dom";
 function App() {
   return (
     <>
-      <Home/>
-      <Menu/>
+      <HashRouter>
+        <Rutas />
+        <Menu />
+      </HashRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

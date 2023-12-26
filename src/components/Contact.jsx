@@ -2,7 +2,7 @@ import { Typography } from "@material-tailwind/react";
 import { VscGithub } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
 
-export default function Footer() {
+export default function Contact() {
   return (
     <footer className="w-full p-8">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
