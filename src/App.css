@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #root {
   max-width: 1280px;
@@ -8,27 +11,6 @@
 }
 * {
   font-family: "Poppins", sans-serif;
-}
-
-/*****************
-Transiciones de la página
-*****************/
-.fade-enter {
-  opacity: 0.01;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
 }
 
 /*****************
@@ -56,7 +38,6 @@ Sección Home
 }
 
 .content {
-  background-color:rgba(255,255,255,.8);
   border-radius:.25em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
   box-sizing:border-box;
@@ -86,6 +67,7 @@ h1 {
   box-shadow: black 3px 10px;
   opacity: 90%;
 }
+
 /*Animacion*/
 .container {
   color: #e5e5e5;
@@ -199,6 +181,7 @@ Sección Menú
 }
 .floating-container:hover {
   height: 500px;
+  transition: all 0.3s;
 }
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
@@ -276,14 +259,12 @@ Sección Menú
 Seccion Sobre mí
 ***************************/
 
-#sobre-mi {
-  margin-top: 650px;
-}
 #foto-perfil {
   height: 30vh;
   width: 15vw;
   border-radius: 50%;
 }
+
 /*******************
 Footer 
 ********************/
