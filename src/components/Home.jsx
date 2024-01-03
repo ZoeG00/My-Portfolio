@@ -8,7 +8,7 @@ const Home = () => {
             src="https://i.ibb.co/k3tDw9y/logo.png"
             width="25%"
           />
-          <section className="animation">
+          <div className="animation">
             <div className="first">
               <div>Soluciones Digitales</div>
             </div>
@@ -18,7 +18,7 @@ const Home = () => {
             <div className="third">
               <div>Desarrollo Mobile</div>
             </div>
-          </section>
+          </div>
           <div className="bg"></div>
           <div className="bg bg2"></div>
           <div className="bg bg3"></div>
