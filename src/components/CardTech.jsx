@@ -10,10 +10,10 @@ import { FaSquareGit } from "react-icons/fa6";
 export default function CardTech() {
   return (
     <>
-      <div className="container-sobre-mi mx-20 segunda-card">
+      <div className="container-sobre-mi mx-16 segunda-card">
         <div className="card">
           <div className="slide slide1">
-            <img src="https://i.ibb.co/QFZFPy0/Dise-o-sin-t-tulo-6.png" />
+            <img src="https://i.ibb.co/QFZFPy0/Dise-o-sin-t-tulo-6.png" alt='tech' className="rounded" />
           </div>
           <div className="slide slide2">
             <div className="icon-container">

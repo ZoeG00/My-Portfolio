@@ -4,62 +4,57 @@ import { BsLinkedin } from "react-icons/bs";
 
 export default function Contact() {
   return (
-  <section>
-<footer className="w-full">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between p-8">
-        <img
-          src="https://i.ibb.co/MNPx72S/logo2.png"
-          alt="logo"
-          width={150}
-          height={50}
-        />
-        <ul
-          className="flex flex-wrap items-center gap-y-2 gap-x-8"
-          id="lista-de-enlaces"
-        >
-          <div id="networks">
+    <section>
+      <div className="blob"></div>
+      <footer className="container-contact w-full">
+        <div className="card-contact flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between p-8">
+          <img
+            src="https://i.ibb.co/MNPx72S/logo2.png"
+            alt="logo"
+            width={150}
+            height={50}
+          />
+          <ul
+            className="flex flex-wrap items-center gap-y-2 gap-x-8"
+            id="lista-de-enlaces"
+          >
+            <div className="subtitle">
+              <li>
+                <a
+                  href="https://www.github.com/ZoeG00"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <VscGithub size={24}/>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/zoeg00"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsLinkedin size={24}/>
+                </a>
+              </li>
+            </div>
             <li>
-              <a
-                href="https://www.github.com/ZoeG00"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <VscGithub />
-              </a>
+              <Typography as="a" color="white" className="title-contact">
+                +54 2634937329
+              </Typography>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/zoeg00"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsLinkedin />
-              </a>
+              <Typography as="a" color="white" className="title-contact">
+                zgsolucionesdigitales@gmail.com
+              </Typography>
             </li>
-          </div>
-          <li>
-            <Typography as="a" color="black" className='contacto'>
-              +54 2634937329
-            </Typography>
-          </li>
-          <li>
-            <Typography as="a" color="black" className='contacto'>
-              zgsolucionesdigitales@gmail.com
-            </Typography>
-          </li>
-        </ul>
-      </div>
-      <hr className="my-8 border-blue-gray-50" />
-      <p className="text-black">&copy; 2024 Soluciones Digitales</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#42d1f5"
-          fillOpacity="1"
-          d="M0,32L40,74.7C80,117,160,203,240,208C320,213,400,139,480,138.7C560,139,640,213,720,234.7C800,256,880,224,960,202.7C1040,181,1120,171,1200,138.7C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </footer>
-  </section>
-    
+          </ul>
+          <p className="text-white title-contact">&copy; 2024 Soluciones Digitales</p>
+        </div>
+        
+      </footer>
+      
+    </section>
+
   );
 }

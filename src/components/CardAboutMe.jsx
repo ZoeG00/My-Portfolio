@@ -1,12 +1,13 @@
 export default function CardAboutMe() {
   return (
     <>
-      <div className="container-sobre-mi mx-20 primer-card">
+      <div className="container-sobre-mi mx-16 primer-card">
         <div className="card">
           <div className="slide slide1">
             <img
               src="https://i.ibb.co/Sxjb4bm/perfil.png"
               alt="mi perfil"
+              className="rounded"
             />
           </div>
           <div className="slide slide2">

@@ -8,17 +8,18 @@ import { GiSpellBook } from "react-icons/gi";
 export default function CardGustos() {
   return (
     <>
-      <div className="container-sobre-mi mx-20 tercer-card">
+      <div className="container-sobre-mi mx-16 tercer-card">
         <div className="card">
           <div className="slide slide1">
             <img
               src="https://i.ibb.co/BjFCnZx/Dise-o-sin-t-tulo-3.png"
-              alt="mi perfil"
+              alt="hobbies"
+              className="rounded"
             />
           </div>
           <div className="slide slide2">
             <div className="icon-container">
-              <div className="font-bold text-xl mb-2 mt-8">Hobbies</div>
+              <div className="font-bold text-xl mb-2 mt-6">Hobbies</div>
               <div className="icon-group">
                 <icon>
                   <IoGameController

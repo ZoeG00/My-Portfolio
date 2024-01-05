@@ -6,7 +6,6 @@ const Home = () => {
           <img
             id="home-img"
             src="https://i.ibb.co/k3tDw9y/logo.png"
-            width="25%"
           />
           <div className="animation">
             <div className="first">
