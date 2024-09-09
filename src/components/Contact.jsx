@@ -5,50 +5,49 @@ import { BsLinkedin } from "react-icons/bs";
 export default function Contact() {
   return (
     <section>
-      <div className="blob"></div>
       <footer className="container-contact w-full">
-        <div className="card-contact flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between p-8">
-          <p>¡Gracias por pasar, no dudes en contactarme!</p>
+        <div className="card-contact flex flex-col items-center text-center gap-y-6 p-8">
+          <p className="text-white">¡Gracias por pasar, no dudes en contactarme!</p>
           <ul
-            className="flex flex-wrap items-center gap-y-2 gap-x-8"
+            className="flex flex-col items-center gap-y-4"
             id="lista-de-enlaces"
           >
-            <div className="subtitle">
-              <li>
+            <div className="flex flex-col items-center gap-y-4">
+              <li className="flex items-center gap-x-2">
                 <a
                   href="https://www.github.com/ZoeG00"
                   target="_blank"
                   rel="noreferrer"
+                  className="flex items-center gap-x-2 text-white"
                 >
                   <VscGithub size={24} />
                   <p>GitHub</p>
                 </a>
               </li>
-              <li>
+              <li className="flex items-center gap-x-2">
                 <a
                   href="https://www.linkedin.com/in/zoeg00"
                   target="_blank"
                   rel="noreferrer"
+                  className="flex items-center gap-x-2 text-white"
                 >
                   <BsLinkedin size={24} />
-                  <p>Linkedin</p>
+                  <p>LinkedIn</p>
                 </a>
               </li>
             </div>
             <li>
-              <Typography as="a" color="white" className="title-contact">
-               Teléfono: +54 2634937329
+              <Typography as="p" color="white" className="title-contact">
+                Teléfono: +54 2634937329
               </Typography>
             </li>
             <li>
-              <Typography as="a" color="white" className="title-contact">
-               email: zoeguzman.ok@gmail.com
+              <Typography as="p" color="white" className="title-contact">
+                email: zoeguzman.ok@gmail.com
               </Typography>
             </li>
           </ul>
-          <p className="text-white title-contact">
-            &copy; 2024 Zoe Guzman Portfolio
-          </p>
+          <p className="text-white mt-4">&copy; 2024 Zoe Guzman Portfolio</p>
         </div>
       </footer>
     </section>

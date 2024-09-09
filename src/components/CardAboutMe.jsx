@@ -5,15 +5,15 @@ export default function CardAboutMe() {
         <div className="card">
           <div className="slide slide1">
             <img
-              src="https://i.ibb.co/Sxjb4bm/perfil.png"
+              src="https://i.ibb.co/ZXYS9rG/IMG-20240905-WA0023.jpg"
               alt="mi perfil"
               className="rounded"
             />
           </div>
           <div className="slide slide2">
             <div>
-              <div className="font-bold text-xl mb-2">Zoe Guzman</div>
-              <p className="text-base mb-2">
+              <div className="font-bold text-base mt-16 ">¡Hola soy Zoe!</div>
+              <p className="text-base mb-2 text-black">
                 Software Developer
               </p>
               <p className="text-base">

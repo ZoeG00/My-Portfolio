@@ -26,7 +26,7 @@ export default function Projects() {
             <div className="carta">
               <div className="contenido">
                 <div className="imgBx">
-                  <img src="https://i.ibb.co/Tg61n7x/NNNNN.png" />
+                  <img src="https://i.ibb.co/L9FZ9tZ/NNNNN.png" />
                 </div>
                 <div className="contentBx">
                   <h3>Casa de Comidas Comunetti</h3>

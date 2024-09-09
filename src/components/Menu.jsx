@@ -31,15 +31,15 @@ export default function Menu() {
         </Link>
         <div className="element-container">
           <Link to="/sobre-mi" className="float-element tooltip-left">
-            <TbUserCode className="icono-menu" size={34}/>
+            <TbUserCode className="icono-menu" size={34} />
             <p className="flex justify-start nav-titles">Sobre mí</p>
           </Link>
           <Link to="/proyectos" className="float-element">
-            <BiLogoReact className="icono-menu" size={34}/>
+            <BiLogoReact className="icono-menu" size={34} />
             <p className="nav-titles">Proyectos</p>
           </Link>
           <Link to="/contacto" className="float-element">
-            <TbMailFilled className="icono-menu" size={34}/>
+            <TbMailFilled className="icono-menu" size={34} />
             <p className="nav-titles">Contacto</p>
           </Link>
         </div>

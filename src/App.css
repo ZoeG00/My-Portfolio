@@ -156,7 +156,7 @@ Sección Menú
   bottom: 0;
   right: 0;
   width: 200px;
-  height: 60px;
+  height: 50px;
   margin: 60px 130px;
 }
 #wtsp-button:hover {
@@ -218,7 +218,7 @@ Sección Menú
 }
 .floating-container .floating-button {
   position: absolute;
-  padding: 10px;
+  padding: 5px;
   background: #2cb3f0;
   bottom: 0;
   border-radius: 50%;
@@ -235,22 +235,23 @@ Sección Menú
   position: relative;
   display: block;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  margin: 50px 10px;
+  width: 60px;
+  height: 60px;
+  margin: 60px 3px;
   color: white;
-  line-height: 100px;
+  line-height: 30px;
   z-index: 100;
   opacity: 0;
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
 }
 .nav-titles {
   text-shadow: black 1px 2px;
-  font-size: 15px;
+  font-size: 13px;
 }
 .icono-menu{
-  margin-left: 16px;
+  margin-left: 13px;
+  margin-bottom: -7px;
 }
 .floating-container .float-element:nth-child(1) {
   background: #52e09e;
@@ -505,32 +506,6 @@ Footer
   flex-wrap: wrap;
   text-align: center;
 
-}
-.blob {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(
-    180deg,
-    rgba(47, 184, 255,0.42) 31.77%,
-    #5c9df1 100%
-  );
-  mix-blend-mode: color-dodge;
-  -webkit-animation: move 25s infinite alternate;
-          animation: move 25s infinite alternate;
-  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
-}
-
-.blob:hover {
-  width: 520px;
-  height: 520px;
-  -webkit-filter: blur(30px);
-          filter: blur(30px);
-  box-shadow:
-    inset 0 0 0 5px rgba(255,255,255, 0.6),
-    inset 100px 100px 0 0px #fa709a,
-    inset 200px 200px 0 0px #784ba8,
-    inset 300px 300px 0 0px #2b86c5;
 }
 
 @-webkit-keyframes move {
