@@ -8,12 +8,7 @@ export default function Contact() {
       <div className="blob"></div>
       <footer className="container-contact w-full">
         <div className="card-contact flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between p-8">
-          <img
-            src="https://i.ibb.co/MNPx72S/logo2.png"
-            alt="logo"
-            width={150}
-            height={50}
-          />
+          <p>¡Gracias por pasar, no dudes en contactarme!</p>
           <ul
             className="flex flex-wrap items-center gap-y-2 gap-x-8"
             id="lista-de-enlaces"
@@ -25,7 +20,8 @@ export default function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <VscGithub size={24}/>
+                  <VscGithub size={24} />
+                  <p>GitHub</p>
                 </a>
               </li>
               <li>
@@ -34,27 +30,27 @@ export default function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <BsLinkedin size={24}/>
+                  <BsLinkedin size={24} />
+                  <p>Linkedin</p>
                 </a>
               </li>
             </div>
             <li>
               <Typography as="a" color="white" className="title-contact">
-                +54 2634937329
+               Teléfono: +54 2634937329
               </Typography>
             </li>
             <li>
               <Typography as="a" color="white" className="title-contact">
-                zgsolucionesdigitales@gmail.com
+               email: zoeguzman.ok@gmail.com
               </Typography>
             </li>
           </ul>
-          <p className="text-white title-contact">&copy; 2024 Soluciones Digitales</p>
+          <p className="text-white title-contact">
+            &copy; 2024 Zoe Guzman Portfolio
+          </p>
         </div>
-        
       </footer>
-      
     </section>
-
   );
 }
